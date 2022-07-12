@@ -249,14 +249,12 @@ def resultDisplay():
 
         point_infos += "\n" + "- " + GlobalVariable.device_name.get(str(mac[-6:]), GlobalVariable.device_list[mac][
             "device_name"]) + "==>" \
-                       + "\n    - 今日积分：" + str(todayPointIncome) \
-                       + "\n    - 可用积分：" + str(amount) \
-                       + "\n    - 总收积分：" + str(allPointIncome)
+                       + "\n    - 昨日积分：" + str(todayPointIncome) \
+                       + "\n    - 可用积分：" + str(amount)
         if satisfiedTimes != "":
             point_infos += "\n    - 累计在线：" + str(satisfiedTimes) + "天"
         if pointInfo.get("runInfo"):
             point_infos += "\n    - 当前网速：" + pointInfo["speed"] \
-                           + "\n    - 当前IP：" + pointInfo["wanip"] \
                            + "\n    - 当前模式：" + pointInfo["model"] \
                            + "\n    - 固件版本：" + pointInfo["rom"]
         if pointInfo.get("pluginInfo"):
