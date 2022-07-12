@@ -1,7 +1,6 @@
 # 普通模板
 def normalTemplate():
     content = """{content}---
-数据日期:{date}
 昨日总收益:{total_today}
 总可用积分:{avail_today}
 设备总数:{devicesCount}
